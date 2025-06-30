@@ -1,0 +1,63 @@
+.container {
+  text-align: center;
+  min-height: 100vh;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.4s ease;
+}
+
+/* Backgrounds based on traffic signal */
+.container.stop {
+  background-color: #e74c3c; /* Red */
+  color: white;
+}
+
+.container.ready {
+  background-color: #f1c40f; /* Yellow */
+  color: #222;
+}
+
+.container.go {
+  background-color: #2ecc71; /* Green */
+  color: white;
+}
+
+/* Buttons */
+.buttons {
+  margin: 30px 0;
+}
+
+.btn {
+  padding: 12px 28px;
+  margin: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.stop {
+  background-color: #c0392b;
+}
+
+.ready {
+  background-color: #f39c12;
+}
+
+.go {
+  background-color: #27ae60;
+}
+
+/* Message */
+.status {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
